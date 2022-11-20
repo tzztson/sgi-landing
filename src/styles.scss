@@ -3,6 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@mixin Line {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #79B669;
+}
+
+
+@mixin LineContent($content) {
+    content: $content;
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: #1F8505;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
 
 * {
     box-sizing: border-box;
@@ -15,4 +41,58 @@
 @font-face {
     font-family: opensans;
     src: url(assets/fonts/OpenSans-standard.ttf)
+}
+
+.roadmap-1::before {
+    @include Line;
+    left: 0;
+}
+
+.roadmap-1::after {
+    @include LineContent("1");
+    left: -50px;
+}
+
+.roadmap-2::before {
+    right: -2px;
+    @include Line;
+}
+
+.roadmap-2::after {
+    @include LineContent("2");
+    right: -50px;
+}
+
+.roadmap-3::before {
+    left: 0;
+    @include Line;
+
+}
+
+.roadmap-3::after {
+    @include LineContent("3");
+    left: -50px;
+}
+
+.roadmap-4::before {
+    right: -2px;
+    @include Line;
+
+}
+
+.roadmap-4::after {
+    @include LineContent("4");
+    right: -50px;
+}
+
+.roadmap-5::before {
+    left: 0;
+    @include Line;
+
+}
+
+.roadmap-5::after {
+
+    @include LineContent("5");
+    left: -50px;
 }
