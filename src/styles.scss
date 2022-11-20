@@ -96,3 +96,13 @@
     @include LineContent("5");
     left: -50px;
 }
+
+.chat-now::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    background: #75757580;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
