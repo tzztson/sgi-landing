@@ -461,21 +461,78 @@
     </div>
   </div>
   <!-- Contact Us More -->
-  <div class="relative">
+  <div class="relative flex justify-center">
     <img src="/assets/img/icons/contact-discuss.png" class="w-full" />
-    <div class="absolute flex py-14 px-11 bg-white rounded-xl">
-      <div class="flex-[1_1_50%] flex flex-col">
+    <div
+      class="absolute flex py-14 px-11 bg-white rounded-xl -bottom-24 shadow-2xl"
+    >
+      <div class="flex-[1_1_50%] flex flex-col gap-5 px-8">
         <p class="text-[32px] font-bold">Contact Us</p>
-        <div class="flex items-start">
-          <img src="/assets/img/icon/phone.png" alt="phone" />
-          <p>+1 480 463 8811 Service Hours: 2:00am~7:00pm Monday~Friday</p>
+        <div class="flex items-start gap-4">
+          <img src="/assets/img/icons/phone.png" alt="phone" />
+          <p>
+            +1 480 463 8811<br />
+            Service Hours: 2:00am~7:00pm Monday~Friday
+          </p>
         </div>
-        <div class="flex items-center">
-          <img src="/assets/img/icon/phone.png" alt="phone" />
+        <div class="flex items-center gap-4">
+          <img src="/assets/img/icons/email.png" alt="email" />
           <p>hr@trident-ai.net</p>
         </div>
+        <button
+          class="bg-[#FCD34D] px-6 py-4 rounded-3xl font-medium text-[16px]"
+        >
+          Submit a request
+        </button>
       </div>
-      <div class="flex-[1_1_50%] flex flex-col"></div>
+      <div class="flex-[1_1_50%] flex flex-col gap-5 px-8 chat-now relative">
+        <p class="text-[32px] font-bold">Chat Now</p>
+        <p>
+          Chat with our sales and support team for quick answers on product,
+          features, pricing and more!
+        </p>
+        <p>Hours: 24/7</p>
+        <button
+          class="bg-[#FCD34D] px-6 py-4 rounded-3xl font-medium text-[16px]"
+        >
+          Chat Now!
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Subscribe -->
+  <div class="flex py-96 items-center">
+    <div class="flex-[1_1_50%] flex items-center justify-center">
+      <div
+        class="bg-[#B8D6B0] w-[600px] h-[600px] rounded-full relative flex justify-center items-center"
+      >
+        <img
+          src="/assets/img/icons/hero-avatar.png"
+          alt="hero-avatar"
+          class="absolute bottom-0"
+        />
+      </div>
+    </div>
+    <div class="flex-[1_1_50%] gap-2">
+      <p class="text-[#002A1B] font-bold text-[30px]">
+        You're probably thinking, “Another newsletter?” <br />
+        But we promise you're going to love ours!
+      </p>
+      <p class="text-[#858585] text-[20px] font-normal mt-2 mb-12">
+        Subscribe to our newsletter
+      </p>
+      <div class="flex">
+        <input
+          type="text"
+          placeholder="Your Email"
+          class="text-[16px] text-[#858C94] font-normal border-[#E6E6E6] border-[1px] bg-[#E6E6E6] outline-none py-7 px-5 rounded-l-lg w-[50%] box-border"
+        />
+        <button
+          class="bg-[#1F8505] py-7 px-9 text-white font-medium text-[22px] rounded-r-3xl"
+        >
+          Subscribe
+        </button>
+      </div>
     </div>
   </div>
 </div>
