@@ -5,15 +5,17 @@
     class="w-full"
   />
   <div class="container mx-auto flex flex-col pt-8 pb-40">
-    <div class="flex-[1_1_60%] px-24">
+    <div class="flex-[1_1_60%] px-24 flex flex-col max-[600px]:px-4">
       <p class="font-bold text-[44px] text-[#383C3E] py-6">Submit a request</p>
       <p class="font-normal text-[16px] text-[#737B7D] pb-20">
         Need an experienced and skilled hand with custom IT projects?
         <br />Fill out the form to get a free consultation.
       </p>
     </div>
-    <div class="flex items-center gap-12">
-      <div class="flex-[1_1_60%] flex flex-col px-24 justify-start gap-6">
+    <div class="flex items-center gap-12 max-lg:flex-col">
+      <div
+        class="max-lg:w-full flex-[1_1_60%] flex flex-col px-24 max-[600px]:px-4 max-xl:px-16 justify-start gap-6"
+      >
         <div class="relative w-full">
           <input
             type="text"
@@ -79,9 +81,11 @@
           </span>
         </div>
 
-        <p class="font-normal text-[16px] text-[#8E8E8E] p-3">Description</p>
+        <p class="font-normal text-[16px] text-[#8E8E8E] px-3 pt-6 pb-1">
+          Description
+        </p>
         <textarea
-          class="my-6 border-[#CDCDCD] bg-[#F6F5F5] border-[1px] box-border rounded-xl p-5 text-[#8E8E8E] outline-none w-full h-48"
+          class="mb-6 border-[#CDCDCD] bg-[#F6F5F5] border-[1px] box-border rounded-xl p-5 text-[#8E8E8E] outline-none w-full h-48"
         ></textarea>
         <div class="py-12 border-dashed border-[4px] border-[#E5E5E5] my-4">
           <div class="flex justify-center items-center gap-4">
@@ -100,51 +104,72 @@
         <div class="flex items-center gap-4 py-3">
           <input
             type="checkbox"
+            id="NDA"
             class="accent-[#1F8505] border-[#383C3E] w-6 h-6"
           />
-          <p class="text-[18px] font-normal text-[#383C3E]">
+          <label
+            for="NDA"
+            class="text-[18px] font-normal text-[#383C3E] select-none"
+          >
             I want to protect my data by signing an NDA
-          </p>
+          </label>
         </div>
       </div>
-      <div class="flex-[1_1_40%] px-20">
-        <p class="font-bold text-[16px] text-[#383C3E] pt-8 pb-5">Offices</p>
-        <p class="py-3">
-          United States<br />500 5th Avenue Suite 400, NY 10110
-        </p>
-        <p class="py-3">United Kingdom<br />High St, Bromley BR1 1DN</p>
-        <p class="py-3">France<br />80 avenue des Terroirs de France, Paris</p>
-        <p class="font-bold text-[16px] text-[#383C3E] pt-20 pb-2">
-          For Quick Inquiries
-        </p>
-        <div class="flex items-center my-6 gap-2">
-          <img
-            src="/assets/img/icons/flag-uk.svg"
-            class="w-7 h-4"
-            alt="flag-uk"
-          />
-          <p>+44 7777777777</p>
-        </div>
-        <div class="flex items-center my-6 gap-2">
-          <img
-            src="/assets/img/icons/flag-us.svg"
-            class="w-7 h-4"
-            alt="flag-us"
-          />
-          <p>+1 3333333330</p>
-        </div>
-        <p class="font-bold text-[16px] text-[#383C3E] pt-14 pb-8">
-          Would you like to join our newsletter?
-        </p>
-        <div class="flex items-center gap-4 my-2">
-          <input
-            type="text"
-            placeholder="Email"
-            class="text-[16px] font-normal text-[#8E8E8E] border-b-[#737B7D] border-b-[1px] px-3 py-3 outline-none"
-          />
-          <button class="bg-[#008F17] py-4 px-7">
-            <img src="/assets/img/icons/trans-check.png" alt="trans-check" />
-          </button>
+      <div class="flex-[1_1_40%] px-20 max-[600px]:px-4 max-xl:px-12">
+        <div
+          class="flex flex-col max-lg:flex-row max-lg:items-start max-lg:justify-between gap-12 max-md:flex-col"
+        >
+          <div>
+            <p class="font-bold text-[16px] text-[#383C3E] pt-8 pb-5">
+              Offices
+            </p>
+            <p class="py-3">
+              United States<br />500 5th Avenue Suite 400, NY 10110
+            </p>
+            <p class="py-3">United Kingdom<br />High St, Bromley BR1 1DN</p>
+            <p class="py-3">
+              France<br />80 avenue des Terroirs de France, Paris
+            </p>
+          </div>
+          <div>
+            <p
+              class="font-bold text-[16px] text-[#383C3E] max-lg:pt-8 pt-20 pb-2"
+            >
+              For Quick Inquiries
+            </p>
+            <div class="flex items-center my-6 gap-2">
+              <img
+                src="/assets/img/icons/flag-uk.svg"
+                class="w-7 h-4"
+                alt="flag-uk"
+              />
+              <p>+44 7777777777</p>
+            </div>
+            <div class="flex items-center my-6 gap-2">
+              <img
+                src="/assets/img/icons/flag-us.svg"
+                class="w-7 h-4"
+                alt="flag-us"
+              />
+              <p>+1 3333333330</p>
+            </div>
+            <p class="font-bold text-[16px] text-[#383C3E] pt-14 pb-8">
+              Would you like to join our newsletter?
+            </p>
+            <div class="flex items-center gap-4 my-2">
+              <input
+                type="text"
+                placeholder="Email"
+                class="w-full text-[16px] font-normal text-[#8E8E8E] border-b-[#737B7D] border-b-[1px] px-3 py-3 outline-none"
+              />
+              <button class="bg-[#008F17] py-4 px-7">
+                <img
+                  src="/assets/img/icons/trans-check.png"
+                  alt="trans-check"
+                />
+              </button>
+            </div>
+          </div>
         </div>
         <div class="p-10 my-8 bg-[#B8D6B036]">
           <div class="flex flex-col">
