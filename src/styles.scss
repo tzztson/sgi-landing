@@ -29,6 +29,21 @@
     font-weight: 700;
 }
 
+@mixin smallLineContent($content) {
+    content: $content;
+    position: absolute;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    background-color: #1F8505;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+}
 
 * {
     box-sizing: border-box;
@@ -51,16 +66,31 @@
 .roadmap-1::after {
     @include LineContent("1");
     left: -50px;
+
+    @media screen and (max-width:1024px) {
+        @include smallLineContent("1");
+        left: -25px
+    }
 }
 
 .roadmap-2::before {
     right: -2px;
     @include Line;
+
+    @media screen and (max-width:1024px) {
+        left: 0px;
+        @include Line;
+    }
 }
 
 .roadmap-2::after {
     @include LineContent("2");
     right: -50px;
+
+    @media screen and (max-width:1024px) {
+        @include smallLineContent("2");
+        left: -25px
+    }
 }
 
 .roadmap-3::before {
@@ -72,29 +102,47 @@
 .roadmap-3::after {
     @include LineContent("3");
     left: -50px;
+
+    @media screen and (max-width:1024px) {
+        @include smallLineContent("3");
+        left: -25px
+    }
 }
 
 .roadmap-4::before {
     right: -2px;
     @include Line;
 
+    @media screen and (max-width:1024px) {
+        left: 0px;
+        @include Line;
+    }
 }
 
 .roadmap-4::after {
     @include LineContent("4");
     right: -50px;
+
+    @media screen and (max-width:1024px) {
+        @include smallLineContent("4");
+        left: -25px
+    }
 }
 
 .roadmap-5::before {
     left: 0;
     @include Line;
-
 }
 
 .roadmap-5::after {
 
     @include LineContent("5");
     left: -50px;
+
+    @media screen and (max-width:1024px) {
+        @include smallLineContent("5");
+        left: -25px
+    }
 }
 
 .chat-now::before {
