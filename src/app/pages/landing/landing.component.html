@@ -340,7 +340,7 @@
       >
         <div>
           <p
-            class="text-[40px] text-[#002A1B] font-bold text-center max-md:text-[32px] pb-3"
+            class="max-[360px]:text-[25px] text-[40px] text-[#002A1B] font-bold text-center max-md:text-[32px] pb-3"
           >
             Corporate Social Responsibility
           </p>
@@ -377,23 +377,23 @@
         We would love to hear from you
       </p>
     </div>
-    <div class="flex">
+    <div class="flex max-xl:flex-col">
       <div
         class="flex-[1_1_50%] flex flex-col items-center relative w-full bg-[#F2F2F261]"
       >
         <p
-          class="font-semibold text-[32px] text-center py-9 px-32 text-[#221E13] w-full border-[#1F8505] border-b-[2px]"
+          class="font-semibold text-[32px] max-md:px-8 text-center py-9 px-32 text-[#221E13] w-full border-[#1F8505] border-b-[2px]"
         >
           Schedule a Call
         </p>
-        <div class="px-24 py-16 flex flex-col gap-5">
-          <div class="flex gap-4">
+        <div class="px-24 max-sm:px-7 py-16 flex flex-col gap-5">
+          <div class="flex gap-4 max-md:flex-col">
             <div>
               <p class="font-normal text-5 text-[#221E13]">First Name*</p>
               <input
                 type="text"
                 placeholder="Enter your First Name"
-                class="text-5 font-normal bg-[#0000000A] py-4 px-3 outline-none rounded"
+                class="text-5 font-normal bg-[#0000000A] py-4 px-3 outline-none rounded max-md:w-full"
               />
             </div>
             <div>
@@ -401,17 +401,17 @@
               <input
                 type="text"
                 placeholder="Enter your Last Name"
-                class="text-5 font-normal bg-[#0000000A] py-4 px-3 outline-none rounded"
+                class="text-5 font-normal bg-[#0000000A] py-4 px-3 outline-none rounded max-md:w-full"
               />
             </div>
           </div>
-          <div class="flex gap-4">
+          <div class="flex gap-4 max-md:flex-col">
             <div>
               <p class="font-normal text-5 text-[#221E13]">Zip code*</p>
               <input
                 type="text"
                 placeholder="Enter your Zip code"
-                class="text-5 font-normal bg-[#0000000A] py-4 px-3 outline-none rounded"
+                class="text-5 font-normal bg-[#0000000A] py-4 px-3 outline-none rounded max-md:w-full"
               />
             </div>
             <div>
@@ -419,7 +419,7 @@
               <input
                 type="text"
                 placeholder="Enter your Phone Number"
-                class="text-5 font-normal bg-[#0000000A] py-4 px-3 outline-none rounded"
+                class="text-5 font-normal bg-[#0000000A] py-4 px-3 outline-none rounded max-md:w-full"
               />
             </div>
           </div>
@@ -440,10 +440,12 @@
             />
           </div>
           <div class="">
-            <p class="font-normal text-[16px] text-[#221E13]">
+            <p class="font-normal text-[16px] text-[#221E13] pb-4">
               Best time to call?
             </p>
-            <div class="flex items-center gap-8">
+            <div
+              class="flex items-center gap-8 max-[425px]:flex-col max-[425px]:items-start max-[425px]:gap-4"
+            >
               <div class="flex items-center gap-3">
                 <input
                   type="radio"
@@ -478,15 +480,18 @@
       <img
         src="/assets/img/icons/contact-us.png"
         alt=""
-        class="flex-[1_1_50%]"
+        class="flex-[1_1_50%] max-[800px]:hidden"
       />
     </div>
   </div>
   <!-- Contact Us More -->
-  <!-- <div class="relative flex justify-center">
-    <img src="/assets/img/icons/contact-discuss.png" class="w-full" />
+  <div class="relative flex justify-center">
+    <img
+      src="/assets/img/icons/contact-discuss.png"
+      class="w-full max-lg:hidden"
+    />
     <div
-      class="absolute flex py-14 px-11 bg-white rounded-xl -bottom-24 shadow-2xl container mx-auto"
+      class="absolute max-sm:flex-col max-sm:gap-6 flex py-14 px-11 max-[420px]:px-0 bg-white rounded-xl -bottom-24 max-[800px]:-bottom-96 max-sm:-bottom-[600px] shadow-2xl container mx-auto"
     >
       <div class="flex-[1_1_50%] flex flex-col gap-5 px-8">
         <p class="text-[32px] font-bold">Contact Us</p>
@@ -521,12 +526,14 @@
         </button>
       </div>
     </div>
-  </div> -->
+  </div>
   <!-- Subscribe -->
-  <!-- <div class="flex pt-96 pb-32 items-center container mx-auto">
+  <div
+    class="flex pt-96 pb-32 items-center container mx-auto max-xl:flex-col max-[800px]:mt-[200px] max-sm:mt-[400px]"
+  >
     <div class="flex-[1_1_50%] flex items-center justify-center">
       <div
-        class="bg-[#B8D6B0] w-[600px] h-[600px] rounded-full relative flex justify-center items-center"
+        class="bg-[#B8D6B0] w-[600px] h-[600px] max-sm:w-[360px] max-sm:h-[360px] max-[400px]:w-[240px] max-[400px]:h-[240px] rounded-full relative flex justify-center items-center"
       >
         <img
           src="/assets/img/icons/hero-avatar.png"
@@ -535,7 +542,7 @@
         />
       </div>
     </div>
-    <div class="flex-[1_1_50%] gap-2">
+    <div class="flex-[1_1_50%] gap-2 my-12 max-md:px-5">
       <p class="text-[#002A1B] font-bold text-[30px]">
         You're probably thinking, “Another newsletter?” <br />
         But we promise you're going to love ours!
@@ -543,18 +550,18 @@
       <p class="text-[#858585] text-[20px] font-normal mt-2 mb-12">
         Subscribe to our newsletter
       </p>
-      <div class="flex">
+      <div class="flex max-[576px]:flex-col">
         <input
           type="text"
           placeholder="Your Email"
-          class="text-[16px] text-[#858C94] font-normal border-[#E6E6E6] border-[1px] bg-[#E6E6E6] outline-none py-7 px-5 rounded-l-lg w-[50%] box-border"
+          class="max-[576px]:w-full max-[576px]:rounded-none max-[576px]:py-5 text-[16px] text-[#858C94] font-normal border-[#E6E6E6] border-[1px] bg-[#E6E6E6] outline-none py-7 px-5 rounded-l-lg w-[50%] box-border"
         />
         <button
-          class="bg-[#1F8505] py-7 px-9 text-white font-medium text-[22px] rounded-r-3xl"
+          class="max-[576px]:rounded-none max-[576px]:py-5 bg-[#1F8505] py-7 px-9 text-white font-medium text-[22px] rounded-r-3xl"
         >
           Subscribe
         </button>
       </div>
     </div>
-  </div> -->
+  </div>
 </div>

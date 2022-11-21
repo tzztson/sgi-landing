@@ -153,4 +153,9 @@
     height: 100%;
     top: 0;
     left: 0;
+
+    @media screen and (max-width: 640px) {
+        display: none;
+
+    }
 }
