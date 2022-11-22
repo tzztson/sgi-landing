@@ -25,18 +25,23 @@
     >
       Register
     </button>
-    <div class="hidden max-[1300px]:block space-y-2">
+    <div
+      *ngIf="isOpen === false"
+      class="hidden max-[1300px]:block space-y-2"
+      (click)="toggleMenu()"
+    >
       <span class="block w-8 h-1 bg-white"></span>
       <span class="block w-8 h-1 bg-white"></span>
       <span class="block w-8 h-1 bg-white"></span>
     </div>
-    <div class="hidden space-y-2">
+    <div *ngIf="isOpen" class="space-y-2" (click)="toggleMenu()">
       <span class="block w-8 h-1 bg-white translate-y-3 rotate-45"></span>
       <span class="block w-8 h-1 bg-white translate-x-3 opacity-0"></span>
       <span class="block w-8 h-1 bg-white -translate-y-3 -rotate-45"></span>
     </div>
   </div>
   <div
+    (click)="toggleSmallMenu()"
     class="hidden max-[680px]:block space-y-2 max-[384px]:space-y-[7px] max-[336px]:space-y-[5px]"
   >
     <span class="block w-8 h-1 bg-white max-[336px]:w-[30px]"></span>
@@ -46,4 +51,59 @@
   <div
     class="max-[680px]:hidden absolute rounded-full border-2 bg-[#07844C] opacity-5 w-[380px] h-[380px] top-0 left-0 max-[1300px]:w-[280px] max-[1300px]:h-[280px]"
   ></div>
+</div>
+<div *ngIf="isOpen" class="bg-[#79b669] w-full">
+  <nav class="flex flex-col px-4 py-4">
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Home</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >About Us</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Services</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Team</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Contact</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Help Center</a
+    >
+  </nav>
+</div>
+
+<div *ngIf="isSmallOpen" class="bg-[#79b669] w-full">
+  <nav class="flex flex-col items-center gap-2 px-4 py-4">
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Home</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >About Us</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Services</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Team</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Contact</a
+    >
+    <a class="text-white text-[30px] font-semibold text-center" routerLink="/"
+      >Help Center</a
+    >
+    <a
+      class="bg-[#FCD34D] text-black font-normal text-base rounded px-[18px] py-2 text-center w-48"
+      routerLink="/"
+      >Sign in</a
+    >
+    <a
+      class="bg-[#FCD34D] text-black font-normal text-base rounded px-[18px] py-2 text-center w-48"
+      routerLink="/"
+      >Register</a
+    >
+  </nav>
 </div>
